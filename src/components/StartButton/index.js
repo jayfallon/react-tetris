@@ -1,7 +1,9 @@
 import React from "react";
 
+import { StartButtonStyles } from "./styles";
+
 const StartButton = ({ callback }) => {
-  return <div>Start Game</div>;
+  return <StartButtonStyles>Start Game</StartButtonStyles>;
 };
 
 export default StartButton;
