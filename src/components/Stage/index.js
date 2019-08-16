@@ -1,11 +1,11 @@
 import React from "react";
 import Cell from "../Cell";
-import Aux from "../../hoc/aux";
+import { StageStyles } from "./styles";
 
 const Stage = ({ stage }) => (
-  <Aux>
+  <StageStyles width={stage[0].length} height={stage.length}>
     {stage.map(row => row.map((cell, x) => <Cell key={x} type={cell[0]} />))}
-  </Aux>
+  </StageStyles>
 );
 
 export default Stage;
