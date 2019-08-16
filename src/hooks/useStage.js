@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 
 import { createStage } from "../gameHelpers";
 
-import { usePlayer } from "./usePlayer";
+// import { usePlayer } from "./usePlayer";
 
 export const useStage = (player, resetPlayer) => {
   const [stage, setStage] = useState(createStage());
