@@ -1,5 +1,7 @@
 import React from "react";
 
+import { createStage } from "../../gameHelpers";
+
 //Components
 import Stage from "../Stage";
 import Display from "../Display";
@@ -9,7 +11,7 @@ import Aux from "../../hoc/aux";
 const Tetris = () => {
   return (
     <Aux>
-      <Stage />
+      <Stage stage={createStage()} pick={"hello"} />
       <aside>
         <div>
           <Display text="Score" />
